@@ -1,0 +1,18 @@
+.credit {
+  font-weight: var(--regular);
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  width: 48%;
+}
+
+.buttons button:first-of-type {
+  margin-right: 10px;
+}

@@ -1,0 +1,41 @@
+.userInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.avatar {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.user {
+  align-items: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+.header {
+  margin: 0 0 5px 0;
+  max-width: calc(100% - 10px);
+}
+
+@media (max-width: 768px) {
+  .userInformation {
+    flex-direction: row;
+  }
+
+  .user {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .avatar {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}

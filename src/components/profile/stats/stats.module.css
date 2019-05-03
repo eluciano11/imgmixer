@@ -1,0 +1,20 @@
+.stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--stroke-color);
+  border-top: 1px solid var(--stroke-color);
+  padding: 10px 0;
+  margin: 10px 0 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.stat {
+  margin: 0 10px;
+}
+
+.title {
+  margin-top: 5px;
+}

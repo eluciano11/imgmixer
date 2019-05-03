@@ -1,3 +1,17 @@
+:root {
+  --primary-color: #111;
+  --secondary-color: #007fff;
+  --secondary-color-hover: #006aff;
+  --stroke-color: #ddd;
+  --link-color: #999;
+  --white: #fff;
+  --icon-hover-color: #b2b2b2;
+  --loader-size: 40px;
+  --border-radius: 6px;
+  --semi-bold: 600;
+  --regular: 400;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,9 +20,130 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  display: grid;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.text--bold {
+  font-weight: 600;
+}
+
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+.text--small {
+  font-size: 12px;
+}
+
+.text--ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list--no-style {
+  list-style: none;
+}
+
+.link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: var(--semi-bold);
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: var(--white);
+  border: none;
+  font-weight: var(--semi-bold);
+  padding: 10px 20px;
+}
+
+.button--primary {
+  color: var(--primary-color);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.button--primary:active,
+.button--primary:focus {
+  background-color: var(--primary-color);
+  color: var(--icon-hover-color);
+}
+
+.button--secondary {
+  color: var(--secondary-color);
+}
+
+.button--secondary:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.button--secondary:active,
+.button--secondary:focus {
+  background-color: var(--secondary-color-hover);
+  color: var(--icon-hover-color);
+}
+
+.button--primary:active,
+.button--primary:focus,
+.button--secondary:active,
+.button--secondary:focus {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.button--primary:hover svg,
+.button--secondary:hover svg {
+  color: var(--white);
+}
+
+.button--primary:active svg,
+.button--secondary:active svg,
+.button--primary:focus svg,
+.button--secondary:focus svg {
+  color: var(--icon-hover-color);
+}
+
+.button--rounded {
+  border-radius: var(--border-radius);
+}
+
+.button--icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+path {
+  fill: currentColor;
+}
+
+@media (max-width: 768px) {
+  .hidden-xs {
+    display: none;
+  }
 }

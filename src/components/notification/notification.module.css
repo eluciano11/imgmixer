@@ -1,0 +1,56 @@
+.notification {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: var(--white);
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 10px;
+  padding: 10px 15px;
+  max-width: 300px;
+  font-weight: var(--semi-bold);
+  opacity: 0;
+  z-index: 1;
+}
+
+.right {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.rightSlideIn {
+  animation: SlideInFromRight 1s ease forwards;
+}
+
+.rightSlideOut {
+  animation: SlideOutToRight 1s ease forwards;
+}
+
+@keyframes SlideInFromRight {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes SlideOutToRight {
+  0% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+
+  90% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

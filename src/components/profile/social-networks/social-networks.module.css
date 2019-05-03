@@ -1,0 +1,9 @@
+.socialNetworks {
+  display: flex;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.network {
+  margin: 0 10px;
+}

@@ -3,9 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.8",
+    "@types/react": "^16.8.14",
+    "@types/react-copy-to-clipboard": "^4.2.6",
+    "@types/react-dom": "^16.8.4",
+    "@types/unsplash-js": "^5.0.0",
     "react": "^16.8.6",
+    "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-scripts": "3.0.0",
+    "typescript": "^3.4.5",
+    "web-animations-js": "^2.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
