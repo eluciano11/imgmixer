@@ -99,7 +99,8 @@ function Content({ search }: Props) {
     await fetch(
       `${process.env.REACT_APP_SERVER_URL}/photos/download?location=${
         data.photo.downloadLocation
-      }`
+      }`,
+      { method: "POST" }
     );
     setCreditMode(NotificationMode.SHOW);
   };
