@@ -43,7 +43,7 @@ function Content({ search }: Props) {
   };
   const getData = async (search: string) => {
     const response = await fetch(
-      `http://localhost:8000/photos?search=${search}`
+      `${process.env.REACT_APP_SERVER_URL}/photos?search=${search}`
     );
 
     if (response.status >= 200 && response.status <= 299) {
@@ -97,7 +97,7 @@ function Content({ search }: Props) {
   };
   const handleDownload = async () => {
     await fetch(
-      `http://localhost:8000/photos/download?location=${
+      `${process.env.REACT_APP_SERVER_URL}/photos/download?location=${
         data.photo.downloadLocation
       }`
     );
