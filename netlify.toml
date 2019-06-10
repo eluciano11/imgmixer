@@ -1,0 +1,4 @@
+[build]
+base = "imgmixer/"
+publish = "imgmixer/build/"
+command = "yarn build"
