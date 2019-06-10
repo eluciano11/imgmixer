@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { Content } from "./components/content/index";
 import { Header } from "./components/header/index";
 
-import styles from "./app.module.css";
+import styles from "./root.module.css";
 
-function App() {
+function Root() {
   const [searchTerm, setSearchTerm] = useState("");
 
   function updateSearch(search: string) {
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;
