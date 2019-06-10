@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--stroke-color);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 310px;
+}
+
+.search {
+  border: none;
+  font-size: 16px;
+  outline: none;
+  width: calc(100% - 20px);
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+  }
+}

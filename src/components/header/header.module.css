@@ -19,14 +19,6 @@
   margin: 0 20px 0 0;
 }
 
-.search {
-  border: 1px solid var(--stroke-color);
-  border-radius: 20px;
-  font-size: 16px;
-  padding: 10px 20px;
-  width: 310px;
-}
-
 .sourceCredit {
   font-size: 12px;
   font-style: italic;
@@ -34,7 +26,11 @@
 }
 
 @media (max-width: 768px) {
-  .search {
-    width: calc(100% - 40px);
+  .main {
+    width: 100%;
+  }
+
+  .formContainer {
+    width: calc(100% - 28px);
   }
 }

@@ -1,5 +1,6 @@
 import React, { SyntheticEvent } from "react";
 
+import { Search } from "../search/index";
 import styles from "./header.module.css";
 
 type Props = {
@@ -21,16 +22,11 @@ function Header(props: Props) {
     <header className={styles.header}>
       <div className={styles.main}>
         <h2 className={styles.brand}>ImgMixer</h2>
-        <form onSubmit={handleSearch}>
-          <input
-            className={styles.search}
-            name="search"
-            type="text"
-            placeholder="Search random high-resolution photos"
-          />
+        <form className={styles.formContainer} onSubmit={handleSearch}>
+          <Search />
         </form>
       </div>
-      <p className={styles.sourceCredit}>
+      <p className={`${styles.sourceCredit} hidden-xs`}>
         Powered by{" "}
         <a className="link" href="https://www.unsplash.com">
           Unsplash
