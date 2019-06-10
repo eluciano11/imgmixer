@@ -1,8 +1,22 @@
 .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.12);
   padding: 15px 20px;
   z-index: 1;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.brand {
+  margin: 0 20px 0 0;
 }
 
 .search {
@@ -11,6 +25,12 @@
   font-size: 16px;
   padding: 10px 20px;
   width: 310px;
+}
+
+.sourceCredit {
+  font-size: 12px;
+  font-style: italic;
+  margin: 0;
 }
 
 @media (max-width: 768px) {

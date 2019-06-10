@@ -19,14 +19,23 @@ function Header(props: Props) {
 
   return (
     <header className={styles.header}>
-      <form onSubmit={handleSearch}>
-        <input
-          className={styles.search}
-          name="search"
-          type="text"
-          placeholder="Search random high-resolution photos"
-        />
-      </form>
+      <div className={styles.main}>
+        <h2 className={styles.brand}>ImgMixer</h2>
+        <form onSubmit={handleSearch}>
+          <input
+            className={styles.search}
+            name="search"
+            type="text"
+            placeholder="Search random high-resolution photos"
+          />
+        </form>
+      </div>
+      <p className={styles.sourceCredit}>
+        Powered by{" "}
+        <a className="link" href="https://www.unsplash.com">
+          Unsplash
+        </a>
+      </p>
     </header>
   );
 }
