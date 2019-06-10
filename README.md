@@ -2,7 +2,7 @@
 
 This project provides a way to browse through random images using the Unsplash API.
 
-![Preview of the application](https://www.dropbox.com/s/4yjmj5o1zom9lr8/imgmixer.gif?dl=0)
+![Preview of the application](demo.gif)
 
 ## Demo
 
